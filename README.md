@@ -22,8 +22,8 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-<a href="https://imgur.com/9lvgCIa">DEMO HERE... </a>  width=250><br>
-![alt text](https://github.com/ChisomOkwor/Flix/blob/Master/Flix(1).png?raw=true)
+<a href="https://imgur.com/9lvgCIa">DEMO HERE... </a>  
+![alt text](https://github.com/ChisomOkwor/Flix(1).png?raw=true)
 
 ### Notes
   By default, Android Studio selected the MinSDK for my project to be 16, and the Codepath dependency required I use 21 or greater. I kept getting errors, until i realized this was the issue.
