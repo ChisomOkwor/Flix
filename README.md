@@ -23,7 +23,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthough GIF
 <a href="https://imgur.com/9lvgCIa">DEMO HERE... </a>  width=250><br>
-
+![alt text](https://github.com/ChisomOkwor/Flix/blob/Master/Flix(1).png?raw=true)
 
 ### Notes
   By default, Android Studio selected the MinSDK for my project to be 16, and the Codepath dependency required I use 21 or greater. I kept getting errors, until i realized this was the issue.
