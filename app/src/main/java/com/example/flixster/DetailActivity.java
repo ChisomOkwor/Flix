@@ -41,7 +41,7 @@ public class DetailActivity extends YouTubeBaseActivity {
         youTubePlayerView = findViewById(R.id.player);
 
         // String title = getIntent().getStringExtra("title");
-        Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("movie"));
+        Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("Movie"));
         tvOverview.setText(movie.getOverview());
         tvTitle.setText(movie.getTitle());
         ratingBar.setRating((float) movie.getRating());

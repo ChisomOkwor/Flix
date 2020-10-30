@@ -57,12 +57,10 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-
         return movies.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-
         RelativeLayout container;
         TextView tvTitle;
         TextView tvOverview;
@@ -88,13 +86,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     //2. Navigate to a new activity on tap
                     Intent i = new Intent(context, DetailActivity.class);
                     // TODO: Debug Here
-                    i.putExtra("movie", Parcels.wrap(movie));
+                    i.putExtra("Movie", Parcels.wrap(movie));
                     context.startActivity(i);
 
                 }
             });
-
-
         }
     }
 }

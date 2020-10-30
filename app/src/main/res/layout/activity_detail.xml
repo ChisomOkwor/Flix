@@ -17,8 +17,10 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#F3E3E8"
+        android:fontFamily="sans-serif-black"
         android:textSize="30sp"
-        tools:text="Chapter Two" />
+        tools:text=" Chapter Two" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -27,11 +29,15 @@
         android:layout_height="wrap_content"
         android:isIndicator="true"
         android:numStars="10"
+        android:theme="@style/RatingBar"
         android:rating="8.5" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="sans-serif-medium"
         tools:text="A black ops assassin is forced to fight for her own survival after a job goes dangerously wrong." />
 </LinearLayout>
