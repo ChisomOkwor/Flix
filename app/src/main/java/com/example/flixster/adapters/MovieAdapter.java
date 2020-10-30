@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -23,8 +22,6 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
-import static android.widget.Toast.LENGTH_SHORT;
-
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     Context context;
@@ -35,7 +32,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         this.movies = movies;
     }
 
-    //usually involves inflating a layout from XML and returning the holder.
+    // For inflating a layout from XML and returning the holder.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -44,14 +41,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         return new ViewHolder(movieView);
     }
 
-    //involves populating the data into the item through holder.
+    // For populating the data into the item through holder.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d("MovieAdapter","onBindViewHolder " + position);
         //Get the movie at the passed in position.
         Movie movie = movies.get(position);
-
-        //Bind the movie data into the ViewHolder
+        // Bind the movie data into the ViewHolder
         holder.bind(movie);
     }
 
@@ -85,7 +81,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 public void onClick(View v) {
                     //2. Navigate to a new activity on tap
                     Intent i = new Intent(context, DetailActivity.class);
-                    // TODO: Debug Here
                     i.putExtra("Movie", Parcels.wrap(movie));
                     context.startActivity(i);
 

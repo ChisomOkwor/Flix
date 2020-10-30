@@ -17,10 +17,10 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F3E3E8"
-        android:fontFamily="sans-serif-black"
+        android:background="#E6D8DD"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textSize="30sp"
-        tools:text=" Chapter Two" />
+        tools:text="  Chapter Two" />
 
     <RatingBar
         android:id="@+id/ratingBar"

@@ -7,7 +7,7 @@ import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Parcel Annotation to sent object as intent
 @Parcel
 public class Movie {
     int movieId;
@@ -16,7 +16,7 @@ public class Movie {
     String overview;
     double rating;
 
-    //empty constructor needed by the Parceler library.
+    // Empty constructor needed by the Parceler library.
     public Movie(){
 
     }
@@ -36,7 +36,6 @@ public class Movie {
         }
         return movies;
     }
-
 
     public String getPosterPath() {
         return String.format("https://image.tmdb.org/t/p/w342/%s",posterPath);

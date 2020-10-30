@@ -30,7 +30,6 @@ public class DetailActivity extends YouTubeBaseActivity {
     RatingBar ratingBar;
     YouTubePlayerView youTubePlayerView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,13 +39,12 @@ public class DetailActivity extends YouTubeBaseActivity {
         ratingBar = findViewById(R.id.ratingBar);
         youTubePlayerView = findViewById(R.id.player);
 
-        // String title = getIntent().getStringExtra("title");
         Movie movie = Parcels.unwrap(getIntent().getParcelableExtra("Movie"));
         tvOverview.setText(movie.getOverview());
         tvTitle.setText(movie.getTitle());
         ratingBar.setRating((float) movie.getRating());
 
-        AsyncHttpClient client = new AsyncHttpClient(); //instantiate instance of the AsyncHttpClient class.
+        AsyncHttpClient client = new AsyncHttpClient();
         client.get(String.format(VIDEO_URL, movie.getMovieId()), new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Headers headers, JsonHttpResponseHandler.JSON json) {
@@ -60,7 +58,6 @@ public class DetailActivity extends YouTubeBaseActivity {
                     initializeYouTube(youtubeKey);
                 } catch (JSONException e) {
                     Log.e("DetailActivity", "failed to parse JSON",e);
-                    //e.printStackTrace();
                 }
             }
 
@@ -69,7 +66,6 @@ public class DetailActivity extends YouTubeBaseActivity {
 
             }
         });
-
     }
 
     private void initializeYouTube(final String youtubeKey) {
