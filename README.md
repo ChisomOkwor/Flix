@@ -22,8 +22,17 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-<a href="https://imgur.com/9lvgCIa">DEMO HERE... </a>  
+<a href="https://imgur.com/9lvgCIa">DEMO 1 HERE... </a>  
 <img src="https://github.com/ChisomOkwor/Flix/blob/master/Flix(1).png" width=250><br>
+
+### Notes
+  By default, Android Studio selected the MinSDK for my project to be 16, and the Codepath dependency required I use 21 or greater. I kept getting errors, until i realized this was the issue.
+  
+
+### Open-source libraries used
+
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
 
 
 ## Flix Part 2
@@ -46,20 +55,11 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 ### App Walkthough GIF
-
-<img src="https://imgur.com/a/865mon3" width=250><br>
-
+<a href="https://imgur.com/a/865mon3">DEMO  HERE... </a>  
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+- Youtube
 
 
-### Notes
-  By default, Android Studio selected the MinSDK for my project to be 16, and the Codepath dependency required I use 21 or greater. I kept getting errors, until i realized this was the issue.
-  
-
-### Open-source libraries used
-
-- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
-- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
